@@ -8,6 +8,14 @@ app.get('/', (req,res) => {
     res.send('Hello World')
 })
 
+app.get('/app', (req,res) => {
+    res.send('Hello App')
+})
+
+app.get('/app/1', (req,res) => {
+    res.send('Hello App1')
+})
+
 app.listen(process.env.PORT, () => {
     console.log(`Example app listening on port ${port}`)
 })
